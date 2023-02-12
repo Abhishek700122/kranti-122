@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .learn {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+    }
+    body {
+      background-image: url('img_vid/background1.jpg');
+      background-size: 100%;
+    }
+    .colorcard {
+      display: flex;
+      height: 1000px;
+      justify-content: center;
+      gap: 4rem;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory; 
+    }
+    .cardcontact {
+      height: 160px;
+      width: 250px;
+      background-color: silver;
+      border-radius: 9px;
+      text-align: center;
+      position: fixed;
+      top: 1%;
+      right: 10px;
+      background-image: url('img_vid/background3.webp');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      overflow: auto;
+      resize: both;
+    }
+    .cardcontact a {
+      text-decoration: none;
+      color: white;
+    }
+    .cardcontact h1 {
+    text-transform: capitalize;
+  }
+  .cardcontact a:hover {
+    color: rgb(245, 149, 23);
+  }
+  .cardcontact a:active {
+    color: rgb(226, 43, 119);
+  }
+    .card{
+      background-color: silver;
+      border-radius: 9px;
+      width: 250px;
+      padding: 1.5rem 2rem;
+      height: 3000px;
+      text-align: center; 
+    }
+    #properties{
+      background-image: url('img_vid/card1.jpg');
+      background-size: 100%;
+    }
+    #rental{
+      background-image: url('img_vid/card2.jpg');
+      background-size: 100%;
+    }
+    #sale{
+      background-image: url('img_vid/card3.jpg');
+      background-size: 100%;
+    }
+    h1, p{
+      color: white;
+    }
+    .card h1{
+      font-size: 35px;
+      writing-mode: vertical-rl;
+    }
+    @media screen and (max-width: 1200px){
+      .learn {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      }
+      .colorcard {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 230px;
+        
+      }
+      .cardcontact {
+        width: 220px;
+        height: 130px;
+        position: fixed;
+        bottom: 20%;
+        
+      }
+     }
+    
+  </style>
+</head>
+<body>
+  <section class="learn">
+  <div class="colorcard">
+  <div class="card" id="properties">
+    image goes here
+    <div>
+     <h1>510</h1>
+     <p>properties</p>
+    </div>
+  </div>
+  <div class="card" id="rental">
+    image goes here
+    <div>
+      <h1>320</h1>
+      <p>rental</p>
+    </div>
+  </div>
+  <div class="card" id="sale">
+    image goes here
+    <div>
+      <h1>200</h1>
+      <p>sale</p>
+    </div>
+  </div>
+</div>
+<div class="cardcontact">
+  <h1>Contact Us</h1>
+  <a href="mailto:abhishekghosh0016@gmail.com">abhishekghosh0016@gmail.com</a><br/>
+  <a href="tel:+919330672180">+919330672180</a>
+
+</div>
+</section>
+</body>
+</html>

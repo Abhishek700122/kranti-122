@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FORM</title>
+    <style>
+      *{
+      box-sizing: border-box;
+    }
+    form label {
+      display: block;
+    }
+    section {
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <h1>Login</h1>
+      <form method="get" id="login-form">
+      <div>
+        <div>
+          <label for="login-name">Name</label>
+          <input type="text" name="login-name" id="login-name" placeholder="Enter Your Full Name" autofocus>
+        </div>
+        <div>
+          <label for="login-email">Email Address</label>
+          <input type="email" name="login-email" id="login-email" disabled>
+        </div>
+      </div>
+      <div>
+          <label for="login-address-1">Address</label>
+          <input type="text" name="login-address-1" id="login-address-1">
+          <input type="text" name="login-address-2" id="login-address-2">
+      </div>
+      <div>
+        <div>
+          <label for="login-city">City</label>
+          <input type="text" name="login-city" id="login-city">
+        </div>
+        <div>
+          <label for="login-state">State</label>
+          <select name="login-state" id="login-state">
+            <option value="W.B.">W.B.</option>
+            <option value="BIHAR">BIHAR</option>
+            <option value="U.P.">U.P.</option>
+            </select>
+        </div>
+        <div>
+          <label for="login-pincode">Pincode</label>
+          <input type="text" name="login-pincode" id="login-pincode">
+        </div>
+      </div>
+      <div>
+        <label for="login-color">Color Samples</label>
+        <label for="color-white">
+          <input type="checkbox" name="login-color" id="color-white" value="White" disabled>White
+        </label>
+        <label for="color-black">
+          <input type="checkbox" name="login-color" id="color-black" value="black">Black
+        </label>
+        <label for="color-blue">
+          <input type="checkbox" name="login-color" id="color-blue" value="Blue" disabled>Blue
+        </label>
+        <label for="color-sky">
+          <input type="checkbox" name="login-color" id="color-sky" value="Sky">Sky
+        </label>
+        <label for="color-red">
+          <input type="checkbox" name="login-color" id="color-red" value="Red">Red
+        </label>
+      </div>
+      <div>
+        <label for="login-teamsize">What is your team size ?</label>
+        <label for="size-1">
+          <input type="radio" name="login-teamsize" id="size-1" value="1-2">1-2
+        </label>
+        <label for="size-2">
+          <input type="radio" name="login-teamsize" id="size-2" value="3-4">3-4
+        </label>
+        <label for="size-3">
+          <input type="radio" name="login-teamsize" id="size-3" value="6-8">6-8
+        </label>
+      </div>
+      <div>
+        <label for="login-comments">Comments</label>
+        <textarea name="login-comments" id="login-comments" cols="20" rows="5" placeholder="Please type here"></textarea>
+      </div>
+      <div>
+        <label for="login-signup">
+          <input type="checkbox" name="login-signup" id="login-signup">Offer Sign-Up
+        </label>
+      </div>
+      <div>
+        
+        <button form="login-form">Submit</button>
+      </div>
+    </form>
+
+    </section>
+
+  </body>
+</html>

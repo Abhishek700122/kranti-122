@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: poppins;
+  zoom: 75%; 
+}
+body {
+  background-image: url('img_vid/su-san-lee-E_eWwM29wfU-unsplash.jpg');
+   background-size: 100%;
+   background-repeat: no-repeat;
+}
+label {
+  display: flex;
+  width: 500px;
+  font-family: poppins;
+  font-size: 25px;
+}
+input {
+  border-radius: 20px;
+  height: 60px;
+  width: 400px;
+  font-family: poppins;
+  font-size: 25px;
+}
+::placeholder {
+  text-align: center;
+}
+input:hover {
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+.card {
+    border-radius: 20px;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(233, 229, 196);
+    background-size: 100%;
+    position: absolute;
+    padding-left: 150px;
+    padding-top: 30px;
+    font-size: 30px;
+    background: rgba(255,255,255,0.4);
+    box-shadow: 0px, 15px, 20px rgba(0,0,0.2);
+    color: rgb(91, 97, 97);
+    margin: 350px;
+    margin-left: 1000px;
+}
+.card:hover {
+    transform: scale(1.07);
+    transition-property: transform;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+h1 {
+  text-align: center;
+  font-style: poppins;
+  text-align: left;
+  font-size: 40px
+}
+.click_btn {
+    justify-content: left;
+}
+.btn {
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    border-width: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: rgb(91, 97, 97);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+.btn:hover {
+    transform: scale(1.2);
+    border-color: rgb(250, 247, 247);
+    color: rgb(85, 117, 185);
+}  
+.forgot a {
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(71, 78, 78);
+    padding-left: 60px;
+} 
+.forgot a:hover {
+    transform: scale(1.2);
+    color: rgb(233, 229, 196);
+}
+.topcard {
+    border-radius: 20px;
+    width: 2600px;
+    height: 100px;
+    background-color: rgb(233, 229, 196);
+    background-size: 100%;
+    position: absolute;
+    background: rgba(255,255,255,0.4);
+    color: rgb(91, 97, 97);
+    margin-left: 75px;
+    margin-top: 4px;
+}
+.topcard:hover {
+  
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.options {
+  display: flex;
+  list-style: none;
+  font-size: 35px;
+  text-align: center;
+}
+.menu {
+  margin-left: 140px;
+  margin-top: 0px;
+  
+}
+.menu1 {
+  margin-top: 0px;
+  cursor: pointer;
+  text-align: center;
+}
+.menu1:hover .drop {
+  display: block;
+}
+.menu2 {
+  margin-top: 0px;
+  margin-left: 140px;
+  cursor: pointer;
+  text-align: center;
+}
+.menu2:hover .drop2 {
+  display: block;
+}
+.drop {
+  display: none;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  margin-left: -30px;
+  margin-top: 35px;
+  background: rgba(255,255,255,0.4); 
+  position: absolute;
+}
+.list {
+  text-align: left;
+  position: absolute;
+  padding-top: 20px;
+  font-size: 35px;
+}
+.list2 {
+  text-align: left;
+  position: absolute;
+  padding-top: 20px;
+  font-size: 28px;
+}
+a {
+  text-decoration: none;
+  color:  rgb(91, 97, 97);
+}
+a:hover {
+  color: rgb(233, 229, 196);
+}
+.drop2 {
+  display: none;
+  border-radius: 20px;
+  width: 550px;
+  height: 120px;
+  margin-top: 35px;
+  margin-left: 5px;
+  background: rgba(255,255,255,0.4); 
+  position: absolute;
+}
+</style>    
+</head>
+<body>
+    <div class="card">
+            <h1>Log-In Credentials</h1>
+          <div>
+            <div>
+              <label for="login-name">User-Name:</label>
+              <input type="text" name="login-name" id="login-name" placeholder="Enter Your Full Name" autofocus>
+            </div></br>
+            <div>
+                <label for="login-name">Password:</label>
+                <input type="text" name="login-name" id="login-name" placeholder="Enter Your Password" autofocus>
+            </div></br>
+          </div></br>
+        <div class="click_btn">
+            <a href="">
+            <button class="btn"><b>Sign-In</b></button>  
+            </a>
+        </div></br>
+        <div class="click_btn">
+            <a href="">
+            <button class="btn"><b>New Registration</b></button> 
+            </a> 
+        </div></br>
+        <div class="forgot">
+           <a href="">Forgot password/User-Name</a>  
+        </div>
+    </div>
+    <div class="topcard">
+      <ul class="options">
+      <div class="menu1"><a href="">Menu</a>
+        <div class="drop"><ul class="list">
+            <a href="">Home</a></br>
+            <a href="">Career</a></br>
+            <a href="">Updates</a></br>
+            <a href="">Mail</a></br>
+            <a href="">About Us</a></br>
+            </ul>
+        </div>
+      </div>
+      <li class="menu"><a href="">Home</a></li>
+      <li class="menu"><a href="">Career</a></li>
+      <li class="menu"><a href="">Updates</a></li>
+      <li class="menu"><a href="">Mail</a></li>
+      <li class="menu2"><a href="">Contact Us</a>
+          <div class="drop2"><ul class="list2">
+            <a href="mailto:abhishekghosh0016@gmail.com">Email: abhishekghosh0016@gmail.com</a><br/>
+            <a href="tel:+919330672180">Phone-Number: +919330672180</a><br/>
+          </ul>
+        </div>
+      </li>
+      </ul>
+    </div>
+</body>
+</html>
+

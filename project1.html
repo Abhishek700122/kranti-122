@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+* {
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: poppins;
+  zoom: 75%; 
+}
+section {
+  align-items: center;
+}
+label {
+  display: inline-block;
+  width: 500px;
+  font-family: poppins;
+}
+input {
+  background-image: url('');
+  height: 40px;
+  width: 300px;
+  font-family: poppins;
+  font-size: large;
+}
+input:hover {
+    transform: scale(1.2);
+    border-color: rgb(250, 247, 247);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+.card {
+    border-radius: 40px;
+    width: 1000px;
+    height: 1480px;
+    background-color: rgb(233, 229, 196);
+    background-size: 100%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 2000px;
+    padding: 50px;
+}
+.card:hover {
+    transform: scale(1.07);
+    transition-property: transform;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+h1 {
+  text-align: center;
+  font-style: poppins;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    background-size: 100%;
+    }
+.click_btn {
+}
+.btn {
+    background-image: url('img_vid/background1.jpg');
+    background-size: 100%;
+    width: 240px;
+    height: 80px;
+    border-radius: 50px;
+    border-width: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: rgb(245, 242, 240);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+.btn:hover {
+    transform: scale(1.2);
+    border-color: rgb(250, 247, 247);
+    color: rgb(119, 247, 172);
+}
+#login-form {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+#login-signup {
+  width: 20px;
+  height: 20px;
+}
+#login-state {
+  height: 40px;
+  width: 300px;
+}
+::placeholder {
+  font-size: 25px;
+}
+#login-state {
+  font-size: 25px;
+  font-family: poppins;
+}
+#login-state:hover {
+    transform: scale(1.2);
+    border-color: rgb(250, 247, 247);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+.option-state {
+  font-size: 25px;
+  font-family: poppins;
+}
+.option-state:hover {
+    transform: scale(1.2);
+    border-color: rgb(250, 247, 247);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+#login-comments:hover {
+  transform: scale(1.07);
+    border-color: rgb(250, 247, 247);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+.job1 {
+transform-style: preserve-3d;
+background-size: 100%;
+background-repeat: no-repeat;
+width: 400px;
+height: 500px;
+border-radius: 12px;
+margin-top: 50px;
+margin-left: 50px;
+position: absolute;
+}
+.job2 {
+transform-style: preserve-3d;
+background-size: 100%;
+background-repeat: no-repeat;
+width: 400px;
+height: 500px;
+border-radius: 12px;
+margin-top: 50px;
+margin-left: 500px;
+position: absolute;
+}
+.job3 {
+transform-style: preserve-3d;
+background-size: 100%;
+background-repeat: no-repeat;
+width: 400px;
+height: 500px;
+border-radius: 12px;
+margin-top: 50px;
+margin-left: 950px;
+position: absolute;
+}
+.job4 {
+transform-style: preserve-3d;
+background-size: 100%;
+background-repeat: no-repeat;
+width: 400px;
+height: 500px;
+border-radius: 12px;
+margin-top: 50px;
+margin-left: 1400px;
+position: absolute;
+}
+.job5 {
+transform-style: preserve-3d;
+background-size: 100%;
+background-repeat: no-repeat;
+width: 400px;
+height: 500px;
+border-radius: 12px;
+margin-top: 600px;
+margin-left: 50px;
+position: absolute;
+}
+.job1:hover, .job2:hover, .job3:hover, .job4:hover, .job5:hover {
+transform: scale(1.2);
+transition-property: transform;
+transition-duration: .3s;
+transition-delay: 0s;
+transition-timing-function: ease;
+}
+.job1:active, .job2:active, .job3:active, .job4:active, .job5:active {
+  transform: rotateY(180deg);
+}
+.job1-front, .job2-front, .job3-front, .job4-front, .job5-front, .job1-back, .job2-back, .job3-back, .job4-back, .job5-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.job1-back, .job2-back, .job3-back, .job4-back, .job5-back {
+  transform: rotateY(180deg);
+  background-color: rgb(197, 63, 157);
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  font-style: poppins;
+  font-size: 25px;
+  color: aliceblue;
+  padding: 45px;
+}
+  </style>
+</head>
+<body>
+<section>
+    <div class="card">
+      <form method="get" id="login-form">
+        <h1>Log-In Credentials</h1>
+      <div>
+        <div>
+          <label for="login-name">Name:</label>
+          <input type="text" name="login-name" id="login-name" placeholder="Enter Your Full Name" autofocus>
+        </div></br>
+        <div>
+          <label for="login-email">Email-Address:</label>
+          <input type="email" name="login-email" id="login-email" disabled>
+        </div>
+      </div></br>
+      <div>
+          <label for="login-address-1">Address:</label>
+          <input type="text" name="login-address-1" id="login-address-1">
+      </div></br>
+      <div>
+        <div>
+          <label for="login-city">City:</label>
+          <input type="text" name="login-city" id="login-city">
+        </div></br>
+        <div>
+          <label for="login-state">State</label>
+          <select name="login-state" id="login-state">
+            <option class="option-state" value="W.B.">W.B.</option>
+            <option class="option-state" value="BIHAR">BIHAR</option>
+            <option class="option-state" value="U.P.">U.P.</option>
+            </select>
+        </div></br>
+        <div>
+          <label for="login-pincode">Pincode:</label>
+          <input type="text" name="login-pincode" id="login-pincode">
+        </div>
+      </div></br>
+      <div>
+        <label for="login-color">Job Profile/Department:</label>
+        <label for="color-white">
+          <input type="checkbox" name="login-color" id="color-white" value="I.T." disabled>I.T.
+        </label>
+        <label for="color-black">
+          <input type="checkbox" name="login-color" id="color-black" value="Business">Business
+        </label>
+        <label for="color-blue">
+          <input type="checkbox" name="login-color" id="color-blue" value="Billing" disabled>Billing
+        </label>
+        <label for="color-sky">
+          <input type="checkbox" name="login-color" id="color-sky" value="Sales">Sales
+        </label>
+        <label for="color-red">
+          <input type="checkbox" name="login-color" id="color-red" value="Designing">Designing
+        </label>
+      </div></br>
+      <div>
+        <label for="login-teamsize">What is your Total Experience ?</label>
+        <label for="size-1">
+          <input type="radio" name="login-teamsize" id="size-1" value="1-2">1-2
+        </label>
+        <label for="size-2">
+          <input type="radio" name="login-teamsize" id="size-2" value="3-4">3-4
+        </label>
+        <label for="size-3">
+          <input type="radio" name="login-teamsize" id="size-3" value="6-8">6-8
+        </label>
+      </div></br>
+      <div>
+        <label for="login-comments">Comments</label>
+        <textarea name="login-comments" id="login-comments" cols="110" rows="7" placeholder="Please type here"></textarea>
+      </div>
+      <div>
+        <label for="login-signup">
+          <input type="checkbox" name="login-signup" id="login-signup">Remember Me
+        </label>
+      </div>
+      </br> 
+    <div class="click_btn">
+    <a href="img_vid/cat.jpg"> 
+    <button class="btn"><b>Apply</b></button>
+    </a>   
+    </div>
+    </form>
+</div>
+<div class="job1">
+    <div class="job1-front">
+      <img width="400px" height="500px" src="img_vid/IT.png" alt="I.T.">
+    </div>
+    <div class="job1-back">
+      <h3>Jobs you can apply for:</h3>
+      <p><b>1.Network administrator</b></p>
+      <p><b>2.System Analyst</b></p>
+      <p><b>3.Cyber-Security</b></p>
+      <p><b>4.HTML-CSS devop</b></p>
+    </div>
+</div>
+<div class="job2">
+ <div class="job2-front">
+    <img width="400px" height="500px" src="img_vid/BUSINESS.jpg" alt="Business">
+  </div> 
+  <div class="job2-back">
+    <h3>Jobs you can apply for:</h3>
+    <p><b>1.Secretory</b></p>
+      <p><b>2.Manager</b></p>
+      <p><b>3.Team-leader</b></p>
+      <p><b>4.Ware-house manager</b></p>
+  </div>
+</div>
+<div class="job3">
+  <div class="job3-front">
+    <img width="400px" height="500px" src="img_vid//billing.jpg" alt="Billing">
+  </div>
+  <div class="job3-back">
+    <h3>Jobs you can apply for:</h3>
+    <p><b>1.Policy Analyst</b></p>
+      <p><b>2.Accountant</b></p>
+      <p><b>3.Head Accountant</b></p>
+      <p><b>4.Head Analyst</b></p>
+  </div>
+</div>
+<div class="job4">
+  <div class="job4-front">
+    <img width="400px" height="500px" src="img_vid/sales.jpg" alt="Sales">
+  </div>
+  <div class="job4-back">
+    <h3>Jobs you can apply for:</h3>
+    <p><b>1.Sales-Associate</b></p>
+      <p><b>2.Sales Manager</b></p>
+      <p><b>3.Product-Lead</b></p>
+      <p><b>4.************</b></p>
+  </div>
+</div>
+<div class="job5">
+  <div class="job5-front">
+    <img width="400px" height="500px" src="img_vid/designer.png" alt="Designers">
+  </div>
+  <div class="job5-back">
+    <h3>Jobs you can apply for:</h3>
+    <p><b>1.Full stack developer</b></p>
+      <p><b>2.Front-end devop</b></p>
+      <p><b>3.Web-design</b></p>
+      <p><b>4.UI/UX designer</b></p>
+  </div>
+</div>
+<div class="cube">
+  <div class="top"></div>
+<div>
+ <span style="--i:0"></span>
+ <span style="--i:1"></span>
+ <span style="--i:2"></span>
+ <span style="--i:3"></span>
+</div> 
+</div>
+</section>   
+</body>
+</html>

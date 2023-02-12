@@ -1,0 +1,9 @@
+1. writingmode: vertical
+2. gap:
+3. transform: scale(-1)
+4. scroll-behaviour: smooth
+5. overflow-x or overflow-y: scroll
+6. scroll-snap-type: x mandatory or y mandatory
+7. overflow: auto and  resize: both or vertical
+8. -webkit-line-clamp: 3 and overflow: hidden
+9. object-fit: cover

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30rem;
+            font-size: 64px;
+        }
+        @keyframes slideInleft {
+            from {
+               transform: translateX(-300px);
+            }
+            to {
+            transform: translateX(0);
+            }
+        }
+        .hello {
+            animation-name: slideInleft;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="hello">Hello World time to Log-In</h1>
+    </section>
+</body>
+</html>
